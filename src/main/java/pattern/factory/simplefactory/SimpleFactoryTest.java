@@ -1,5 +1,7 @@
 package pattern.factory.simplefactory;
 
+import pattern.factory.City;
+import pattern.factory.HangZhouCity;
 import pattern.factory.ICourse;
 import pattern.factory.JavaCourse;
 
@@ -17,10 +19,11 @@ public class SimpleFactoryTest {
 //        ICourseFactory factory = new ICourseFactory();
 //        ICourse course = factory.create("JavaCourse");
 //        course.record();
-
-        CourseFactory factory = new CourseFactory();
+/*        CourseFactory factory = new CourseFactory();
         ICourse course = factory.create(JavaCourse.class);
-        course.record();
-
+        course.record();*/
+CityFactory factory  = new CityFactory();
+        City city = factory.create(HangZhouCity.class);
+        city.record();
     }
 }
